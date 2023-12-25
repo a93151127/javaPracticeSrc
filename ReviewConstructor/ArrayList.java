@@ -21,6 +21,7 @@ public class ArrayList {
         if(next == elems.length){ // 自動增長 Object 陣列長度
             elems = Arrays.copyOf(elems, elems.length*2);
         }
+        elems[next ++ ] = o;
     }
 
     public Object get(int index){ // 依 索引 取得收集之物件
